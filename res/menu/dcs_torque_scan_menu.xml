@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/action_select" android:title="Select All"></item>
+    <item android:id="@+id/action_select_active" android:title="Select All Active"></item>
+    <item android:id="@+id/action_deselect" android:title="Deselect All"></item>
+    <item android:id="@+id/action_save" android:title="Save"/>
+    <item android:id="@+id/action_load" android:title="Load"/>
+    <item android:id="@+id/action_refresh" android:title="Refresh PIDs"></item>
+    <item android:id="@+id/action_toggle_service" android:title="Toggle Service/Logging"></item>
+</menu>

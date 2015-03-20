@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World</string>
+    <string name="app_name">DCS Torque Scan</string>
+    <string name="dcs_preference_key">DCS_TORQUE_SCAN</string>
+    <string name="dcs_checked_items">CHECKED_ITEMS</string>
+</resources>

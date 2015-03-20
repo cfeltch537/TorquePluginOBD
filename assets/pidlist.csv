@@ -1,0 +1,22 @@
+# Torque example plugin file definition
+#
+# Notes: All 'text' strings should be enclosed by quotes.
+#        Equations must be fully bracketed, otherwise calculation order may be 'wrong'.
+#
+# Format: 
+#   Name
+#   LongName, ShortName, PID, Equation, MinValue, MaxValue, Unit, ECUType
+#   {data}
+#
+#
+#   ECUType:  1 = Powertrain, 2 = Transmission
+#
+"Ford Explorer PIDs"
+"Accelerator Pedal Position",                   "Accel",           "221340",   "A*0.3921",                   0,   100,      "%",       1
+"Barometric pressure",                          "Baro",            "221127",   "A*0.13",                     0,   5,        "inHg",    1
+"Commanded Duty Cycle (VCT Sol.)",              "CAMDCR",          "2216CF",   "A*0.7813",                   0,   100,      "%",       1
+"Variable Cam. Timing Err.",                    "CAMERR",          "2216CF",   "((A-128*16)+8)+(B*0.0625) ", 0,   50,       "Deg.",    1
+"Case Ground Voltage",                          "CASGND",          "2216C0",   "(A*7.988) + (B*0.0312)",    -5,   5,        "Volts",   1
+"Transmission Fluid Temp",                      "TransFl",         "221674",   "((A<8)+B)/8",                0,   100,      "\u00B0F", 2
+"Steering angle",                               "Steer",           "223201",   "(A*256)+B-1638",             0,   20,       "Deg.",    1
+ 
